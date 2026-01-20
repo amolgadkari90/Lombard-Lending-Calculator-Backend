@@ -1,0 +1,21 @@
+server:
+  port: 8081
+
+spring:
+  application:
+    name: lombard-lending-calculator
+
+  datasource:
+    url: jdbc:postgresql://localhost:5432/lombard_db
+    username: lombard_user
+    password: lombard_pass
+
+  jpa:
+    hibernate:
+      ddl-auto: validate
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
+
