@@ -17,11 +17,13 @@ import lombard.lending.calculator.dto.LoanRequestDto;
 import lombard.lending.calculator.dto.LoanResponseDto;
 import lombard.lending.calculator.service.LoanCalculatorService;
 import lombok.RequiredArgsConstructor;
+import lombok.extern.slf4j.Slf4j;
 
 @RestController
-
+//@CrossOrigin(origins = "http://localhost:4200")
 @RequestMapping("/api/loans")
 @RequiredArgsConstructor
+@Slf4j
 public class LoanController {
 	
 	private final LoanCalculatorService loanService ;

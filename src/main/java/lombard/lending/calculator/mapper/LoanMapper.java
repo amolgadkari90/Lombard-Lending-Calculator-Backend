@@ -13,7 +13,7 @@ import lombard.lending.calculator.entity.LoanCalculation;
 public interface LoanMapper {
 	
     @Mapping(source = "safeLtv", target = "maxLoanAmount")
-    @Mapping(source = "warningLtv", target = "marginCallThreshold")
+    //@Mapping(source = "warningLtv", target = "marginCallThreshold")
 	LoanResponseDto toLoanDto(LoanCalculation loanCalculation);
 	
 	List<LoanResponseDto> toLoanDtoList(List<LoanCalculation> loanCalculations);
