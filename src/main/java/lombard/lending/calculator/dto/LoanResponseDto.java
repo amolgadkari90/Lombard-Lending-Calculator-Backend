@@ -23,14 +23,13 @@ public class LoanResponseDto {
 //		  "timestamp": "2026-01-16T10:30:00Z"
 //		}
 	
-	private BigDecimal ltv;
-	
-	private String status;
-	
-	private BigDecimal maxLoanAmount;
-	
-	private BigDecimal marginCallThreshold;
-	
-	private OffsetDateTime createdAt ;
+	private BigDecimal portfolioValue;
+    private BigDecimal loanAmount;
+
+    private BigDecimal ltv;
+    private String status;
+    private BigDecimal maxLoanAmount;
+
+    private OffsetDateTime createdAt;
 
 }
